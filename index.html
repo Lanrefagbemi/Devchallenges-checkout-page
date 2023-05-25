@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevChallenges | CheckOut Page</title>
+  <!-- icon library -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- my stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <main class="check-out-main">
+    <h1 class="check-out-title">Checkout</h1>
+
+    <section class="checkout-cart">
+      <h2 class="checkout-cart__title visually-hidden">
+        Checkout Item list
+      </h2>
+
+      <ul class="checkout-cart__items-container flex">
+        <li>
+          <article class="checkout-cart__item">
+            <div class="checkout-cart__item-image-container">
+              <img src="./assets/photo1.png" alt="a picture of a dark green back pack bag with brown straps and hand" class="checkout-cart__item-image">
+            </div>
+
+            <div class="checkout-cart__item-text-container">
+              <div class="checkout-cart__item-title">vintage backbag</div>
+
+              <div class="checkout-cart__item-price">
+                <span class="checkout-cart__current-price">
+                  $54.99
+                </span>
+
+                <span class="checkout-cart__slashed-price">
+                  $94.99
+                </span>
+              </div>
+
+              <div class="checkout-cart__item-quantity-container">
+                <span class="material-icons | checkout-cart__item-adjust checkout-cart__item-decrease">
+                  remove
+                </span>
+
+                <label for="item-quantity" class="visually-hidden">Enter Quantity</label>
+                <input type="number" name="item-quantity" value="1" id="item-quantity" class="checkout-cart__item-quantity">
+
+                <span class="material-icons | checkout-cart__item-adjust checkout-cart__item-increase">
+                  add
+                </span>
+              </div>
+            </div>
+          </article>
+        </li>
+
+        <li>
+          <article class="checkout-cart__item">
+            <div class="checkout-cart__item-image-container">
+              <img src="./assets/photo2.png" alt="a picture of a dark blue denim shoe" class="checkout-cart__item-image">
+            </div>
+
+            <div class="checkout-cart__item-text-container">
+              <div class="checkout-cart__item-title">levi shoes</div>
+
+              <div class="checkout-cart__item-price">
+                <span class="checkout-cart__current-price">
+                  $74.99
+                </span>
+
+                <span class="checkout-cart__slashed-price">
+                  $124.99
+                </span>
+              </div>
+
+              <div class="checkout-cart__item-quantity-container">
+                <span class="material-icons | checkout-cart__item-adjust checkout-cart__item-decrease">
+                  remove
+                </span>
+
+                <label for="item-quantity" class="visually-hidden">Enter Quantity</label>
+                <input type="number" name="item-quantity" value="1" id="item-quantity" class="checkout-cart__item-quantity">
+
+                <span class="material-icons | checkout-cart__item-adjust checkout-cart__item-increase">
+                  add
+                </span>
+              </div>
+            </div>
+          </article>
+        </li>
+      </ul>
+
+      <div class="checkout-cart__total-cost-container">
+        <div class="checkout-cart__cost-details checkout-cart__shipping-details">
+          <div class="checkout-cart__cost-details-label checkout-cart__shipping-label">Shipping</div>
+
+          <div class="checkout-cart__cost-details-amount checkout-cart__shipping-cost">$19</div>
+        </div>
+
+        <div class="checkout-cart__cost-details checkout-cart__total-details">
+          <div class="checkout-cart__cost-details-label checkout-cart__total-label">Total</div>
+
+          <div class="checkout-cart__cost-details-amount checkout-cart__total-cost">$148.98</div>
+        </div>
+      </div>
+    </section>
+
+    <form action="#" class="check-out-form">
+      <section class="contact-section">
+        <h2 class="contact-section__title level-two-heading">Contact information</h2>
+  
+        <div class="form-control-group">
+          <div class="form-control-container">
+            <label pattern="[A-Za-z0-9-_@]+[A-Za-z0-9]\.[A-Za-z0-9]{2,}" for="email-input" class="form-control-container__label">E-mail<span aria-label="required">*</span></label>
+  
+            <div class="form-control-container__input-container">
+              <span class="material-icons | form-control-container__input-icon" aria-hidden="true">
+                email
+              </span>
+  
+              <input required placeholder="Enter your email..." type="email" name="email-address" id="email-input" class="form-control-container__input">
+              <span aria-hidden="true" class="material-icons | form-control-container__input-validation-icon form-control-container__input-validation-done">done</span>
+              <span aria-hidden="true" class="material-icons | form-control-container__input-validation-icon form-control-container__input-validation-error">error</span>
+            </div>
+          </div>
+  
+          <div class="form-control-container">
+            <label for="phone-number-input" class="form-control-container__label">Phone<span aria-label="required">*</span></label>
+  
+            <div class="form-control-container__input-container">
+              <span class="material-icons | form-control-container__input-icon" aria-hidden="true">
+                phone
+              </span>
+  
+              <input required placeholder="Enter your phone..." type="tel" name="phone-number" id="phone-number-input" class="form-control-container__input">
+              <span aria-hidden="true" class="material-icons | form-control-container__input-validation-icon form-control-container__input-validation-done">done</span>
+              <span aria-hidden="true" class="material-icons | form-control-container__input-validation-icon form-control-container__input-validation-error">error</span>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section class="shipping-section">
+        <h2 class="contact-section__title level-two-heading">Shipping address</h2>
+  
+        <div class="form-control-group">
+          <div class="form-control-container">
+            <label for="name-input" class="form-control-container__label">Full name<span aria-label="required">*</span></label>
+  
+            <div class="form-control-container__input-container">
+              <span class="material-icons | form-control-container__input-icon" aria-hidden="true">
+                account_circle
+              </span>
+  
+              <input required placeholder="Your full name..." type="text" name="full-name" id="name-input" class="form-control-container__input">
+                <span aria-hidden="true" class="material-icons | form-control-container__input-validation-icon form-control-container__input-validation-done">done</span>
+                <span aria-hidden="true" class="material-icons | form-control-container__input-validation-icon form-control-container__input-validation-error">error</span>
+            </div>
+          </div>
+  
+          <div class="form-control-container">
+            <label for="address-input" class="form-control-container__label">Address<span aria-label="required">*</span></label>
+  
+            <div class="form-control-container__input-container">
+              <span class="material-icons | form-control-container__input-icon" aria-hidden="true">
+                home
+              </span>
+  
+              <input required placeholder="Your address..." type="text" name="address" id="address-input" class="form-control-container__input">
+                <span aria-hidden="true" class="material-icons | form-control-container__input-validation-icon form-control-container__input-validation-done">done</span>
+                <span aria-hidden="true" class="material-icons | form-control-container__input-validation-icon form-control-container__input-validation-error">error</span>
+            </div>
+          </div>
+  
+          <div class="form-control-container">
+            <label for="city-input" class="form-control-container__label">City<span aria-label="required">*</span></label>
+  
+            <div class="form-control-container__input-container">
+              <span class="material-icons | form-control-container__input-icon" aria-hidden="true">
+                location_city
+              </span>
+  
+              <input required minlength="2" placeholder="Your city..." type="text" name="city" id="city-input" class="form-control-container__input">
+                <span aria-hidden="true"  class="material-icons | form-control-container__input-validation-icon form-control-container__input-validation-done">done</span>
+                <span aria-hidden="true" class="material-icons | form-control-container__input-validation-icon form-control-container__input-validation-error">error</span>
+            </div>
+          </div>
+  
+          <div class="two-column-container flex">
+            <div class="form-control-container">
+              <label for="country-input" class="form-control-container__label">Country<span aria-label="required">*</span></label>
+    
+              <div class="form-control-container__input-container">
+                <span class="material-icons | form-control-container__input-icon" aria-hidden="true">
+                  location_city
+                </span>
+                
+                <select required name="country" id="country-input" class="form-control-container__input">
+                  <option value="" disabled selected hidden>Your country...</option>
+                  <option value="Nigeria">Nigeria</option>
+                  <option value="Ghana">Ghana</option>
+                  <option value="Kenya">Kenya</option>
+                  <option value="England">England</option>
+                </select>
+                <span aria-hidden="true" class="material-icons | form-control-container__input-validation-icon form-control-container__input-validation-done">done</span>
+                <span aria-hidden="true" class="material-icons | form-control-container__input-validation-icon form-control-container__input-validation-error">error</span>
+              </div>
+            </div>
+  
+            <div class="form-control-container">
+              <label for="postal-code-input" class="form-control-container__label">Postal code<span aria-label="required">*</span></label>
+    
+              <div class="form-control-container__input-container">
+                <span class="material-icons | form-control-container__input-icon" aria-hidden="true">
+                  markunread_mailbox
+                </span>
+    
+                <input required placeholder="Your postal code..." type="number" name="postal-code" id="postal-code-input" class="form-control-container__input">
+                <span aria-hidden="true" class="material-icons | form-control-container__input-validation-icon form-control-container__input-validation-done">done</span>
+                <span aria-hidden="true" class="material-icons | form-control-container__input-validation-icon form-control-container__input-validation-error">error</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <div class="save-information-container">
+        <input type="checkbox" name="save-information" value="yes" id="save-information" class="save-information-container__input">
+        <label for="save-information" class="save-information-container__label">Save this information for next time</label>
+      </div>
+  
+      <input type="submit" value="Continue" class="check-out-submit">
+
+    </form>
+  </main>
+
+  <footer>
+    <p class="attribution">
+      created by <span class="attribution_span">LanreFagbemi</span> - <a href="">devChallenges.io</a>
+    </p>
+  </footer>
+  
+</body>
+</html>
